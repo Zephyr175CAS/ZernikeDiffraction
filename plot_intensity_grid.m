@@ -36,8 +36,7 @@ end
 for m=1:M
     nexttile;
     imagesc(x(1,:),y(:,1),I(:,:,m),[0 1]); 
-    axis 
-    image off;
+    axis image off;
     title(sprintf('Set %d',m),'FontSize',opts.fontSize);
 end
 colormap(fig, opts.cm);
